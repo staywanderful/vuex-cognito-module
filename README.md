@@ -7,9 +7,9 @@
 - `fetchCurrentAuthenticatedUser`
 
 ## todo
-[ ] ditch vuepress or upgrade dependcy security vulns
-[ ] typescript support
-[ ] compat with [analytics-dashboard](https://github.com/staywanderful/analytics-dashboard)
+- [ ] ditch vuepress or upgrade dependcy security vulns
+- [ ] typescript support
+- [ ] compat with [analytics-dashboard](https://github.com/staywanderful/analytics-dashboard)
 
 
 ## original docs
