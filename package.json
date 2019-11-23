@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vuetifyjs/vuex/tree/master/packages/cognito-module"
+    "url": "https://github.com/staywanderful/vuex-cognito-module"
   },
   "dependencies": {
     "@aws-amplify/auth": "^1.2.18",
