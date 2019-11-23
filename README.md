@@ -1,5 +1,18 @@
 # vuex-cognito-module
 
+## notes
+- this package was originally boosted from [here](https://github.com/vuetifyjs/vuex/tree/master/packages/cognito-module).
+
+## changes
+- `fetchCurrentAuthenticatedUser`
+
+## todo
+[ ] ditch vuepress or upgrade dependcy security vulns
+[ ] typescript support
+[ ] compat with [analytics-dashboard](https://github.com/staywanderful/analytics-dashboard)
+
+
+## original docs
 Vuex module to interface with AWS Cognito
 
 Docs Link: [https://cognito.vuetifyjs.com/](https://cognito.vuetifyjs.com/)
