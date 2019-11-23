@@ -1,5 +1,5 @@
 {
-  "name": "@laasie.ai/vuex-cognito-module",
+  "name": "vuex-cognito-module",
   "version": "0.0.0",
   "main": "dist/vuex-cognito-module.umd.min.js",
   "scripts": {

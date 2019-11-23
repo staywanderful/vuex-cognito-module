@@ -1,4 +1,4 @@
-declare module '@laasie.ai/vuex-cognito-module' {
+declare module 'vuex-cognito-module' {
   interface CognitoConfig {
     userPoolId: string;
     identityPoolId: string;
