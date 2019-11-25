@@ -29689,7 +29689,9 @@ lib_esm.register(lib_esm_Auth);
     commit
   }) => {
     return new Promise((resolve, reject) => {
-      auth_lib_esm.currentAuthenticatedUser().then(user => {
+      auth_lib_esm.currentAuthenticatedUser({
+        bypassCache: true
+      }).then(user => {
         commit('setUser', user);
         resolve(user);
       }).catch(reject);
