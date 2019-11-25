@@ -4,7 +4,7 @@ import Amplify from '@aws-amplify/core'
 export default {
   fetchCurrentAuthenticatedUser: ({ commit }) => {
     return new Promise((resolve, reject) => {
-      Auth.currentAuthenticatedUser()
+      Auth.currentAuthenticatedUser({ bypassCache: true })
         .then((user) => {
           commit('setUser', user)
           resolve(user)
