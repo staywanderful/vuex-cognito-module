@@ -29730,7 +29730,7 @@ lib_esm.register(lib_esm_Auth);
       password: credentials.password,
       attributes: credentials.attributes
     }).then(user => {
-      commit('setUser', user);
+      // commit('setUser', user)
       resolve(user);
     }).catch(reject);
   }),

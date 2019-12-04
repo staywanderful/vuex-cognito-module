@@ -53,7 +53,7 @@ export default {
         password: credentials.password,
         attributes: credentials.attributes
       }).then(user => {
-        commit('setUser', user)
+        // commit('setUser', user)
 
         resolve(user)
       }).catch(reject)
