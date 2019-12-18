@@ -86,6 +86,18 @@ export default {
         .then(resolve)
         .catch(reject)
     }),
+  changeTempPassword: (_, data) =>
+    new Promise((resolve, reject) => {
+      Auth.signIn({ username: data.username, password: data.tempPassword })
+        .then((user) => {
+          if (user.challengeName === 'NEW_PASSWORD_REQUIRED') {
+            Auth.completeNewPassword(user, data.newPassword, data.attributes)
+              .then(resolve)
+              .catch(reject)
+          }
+        })
+        .catch(reject)
+    }),
   signOut: ({ commit, getters }) =>
     new Promise((resolve, reject) => {
       if (!getters.isLoggedIn) {

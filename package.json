@@ -29,7 +29,6 @@
     "vuepress": "^0.14.2"
   },
   "gitHooks": {
-    "pre-commit": "lint-staged"
   },
   "lint-staged": {
     "*.js": [
