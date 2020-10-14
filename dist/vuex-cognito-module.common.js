@@ -20646,6 +20646,10 @@ var getters_default = /*#__PURE__*/__webpack_require__.n(src_getters);
     state.user = { ...user
     };
     state.session = state.user.signInUserSession;
+  },
+  unsetUser: (state, user) => {
+    state.user = {};
+    state.session = {};
   }
 });
 // CONCATENATED MODULE: ./node_modules/@aws-amplify/auth/lib-esm/types/Auth.js
@@ -29765,7 +29769,7 @@ lib_esm.register(lib_esm_Auth);
     }
 
     auth_lib_esm.signOut().then(result => {
-      commit('setUser', {});
+      commit('unsetUser');
       resolve(result);
     }).catch(reject);
     if (localStorage) localStorage.removeItem('USER');

@@ -28,8 +28,7 @@
     "vue-template-compiler": "^2.5.17",
     "vuepress": "^0.14.2"
   },
-  "gitHooks": {
-  },
+  "gitHooks": {},
   "lint-staged": {
     "*.js": [
       "vue-cli-service lint",

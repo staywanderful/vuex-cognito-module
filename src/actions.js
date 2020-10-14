@@ -106,7 +106,7 @@ export default {
 
       Auth.signOut()
         .then(result => {
-          commit('setUser', {})
+          commit('unsetUser')
 
           resolve(result)
         })
