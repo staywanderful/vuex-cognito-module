@@ -7,7 +7,10 @@ module.exports = {
     if (!accessToken) return false
     const hasToken = accessToken.jwtToken
     const isActive = new Date(accessToken.payload.exp * 1000) > new Date()
-    const isMe = accessToken.payload.username === store.user.username
+    const isMeSrP = accessToken.payload.username === store.user.username
+    const idToken = session.idToken
+    const isMePassword = idToken.payload.email === store.user.username
+    const isMe = isMeSrP || isMePassword
     return hasToken && isActive && isMe
   },
   session: (store = {}) => 'session' in store &&
