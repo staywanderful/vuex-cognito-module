@@ -7536,8 +7536,7 @@ module.exports = {
     const hasToken = accessToken.jwtToken;
     const isActive = new Date(accessToken.payload.exp * 1000) > new Date();
     const isMeSrP = accessToken.payload.username === store.user.username;
-    const idToken = session.idToken;
-    const isMePassword = idToken.payload.email === store.user.username;
+    const isMePassword = session && session.idToken && session.idToken.payload && session.idToken.payload.email === store.user.username;
     const isMe = isMeSrP || isMePassword;
     return hasToken && isActive && isMe;
   },
